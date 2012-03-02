@@ -5,4 +5,5 @@ matchAgainst: aMatcher
 
 	^(next matchAgainst: aMatcher)
 		or: [alternative notNil
-			and: [alternative matchAgainst: aMatcher]]! !
+			and: [alternative matchAgainst: aMatcher]]
+		"simulate bugfix Issue 2"! !
