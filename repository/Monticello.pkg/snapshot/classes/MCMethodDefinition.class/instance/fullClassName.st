@@ -6,6 +6,6 @@ fullClassName
 	^ self classIsMeta
 		ifFalse: [self className]
 		ifTrue: [
-			(self actualClass isNil or: [ self actualClass isTrait ])
+			(self actualClass isTrait )
 				ifFalse: [self className, ' class']
 				ifTrue: [self className, ' classSide']]! !
