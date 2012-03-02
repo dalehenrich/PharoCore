@@ -11,7 +11,5 @@ installSourceFile: aRequest
 	(aStream respondsTo: #close) ifTrue:[aStream close].
 	
 	[ ^ (RWBinaryOrTextStream with: contents) reset fileIn ]
-		on: SyntaxErrorNotification 
-		do: [ :e| 
-			self printSyntaxNotification: e request: aRequest.
-			e defaultAction].! !
+		on: Error, ParserNotification
+		do: [ :e| 	self handleError: e request: aRequest].! !

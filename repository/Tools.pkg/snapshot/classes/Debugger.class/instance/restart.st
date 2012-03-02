@@ -7,6 +7,7 @@ restart
 
 	| ctxt noUnwindError |
 	self okToChange ifFalse: [^ self].
+	self isPostMortem ifTrue: [^ self].
 	self checkContextSelection.
 	ctxt := interruptedProcess popTo: self selectedContext.
 	noUnwindError := false.

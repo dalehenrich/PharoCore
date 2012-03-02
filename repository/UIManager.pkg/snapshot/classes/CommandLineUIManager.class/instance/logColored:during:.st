@@ -1,5 +1,5 @@
 
-!CommandLineUIManager methodsFor: 'ui requests'!
+!CommandLineUIManager methodsFor: 'utils'!
 logColored: anAnsiiColorCode during: aBlock
 	|stderr|
 	

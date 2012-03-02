@@ -1,5 +1,5 @@
 
-!CommandLineUIManager methodsFor: 'ui requests'!
+!CommandLineUIManager methodsFor: 'utils'!
 logRedDuring: aBlock
 	
 	^ self logColored: '31' during: aBlock! !

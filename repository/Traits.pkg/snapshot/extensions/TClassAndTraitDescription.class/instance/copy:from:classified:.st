@@ -8,14 +8,13 @@ copy: sel from: class classified: cat
 
 	| code category |
 	"Useful when modifying an existing class"
-	code := class sourceMethodAt: sel.
-	code == nil
-		ifFalse: 
-			[cat == nil
-				ifTrue: [category := class organization categoryOfElement: sel]
-				ifFalse: [category := cat].
+	code := class sourceCodeAt: sel.
+	code ifNil: 
+			[cat
+				ifNil: [category := class organization categoryOfElement: sel]
+				ifNotNil: [category := cat].
 			(self includesLocalSelector: sel)
-				ifTrue: [code asString = (self sourceMethodAt: sel) asString 
+				ifTrue: [code asString = (self sourceCodeAt: sel) asString 
 							ifFalse: [self error: self name 
 										, ' ' 
 										, sel 

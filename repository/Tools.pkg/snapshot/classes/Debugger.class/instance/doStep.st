@@ -6,6 +6,7 @@ doStep
 	
 	| currentContext newContext |
 	self okToChange ifFalse: [^ self].
+	self isPostMortem ifTrue: [^ self].
 	self checkContextSelection.
 	currentContext := self selectedContext.
 	newContext := interruptedProcess completeStep: currentContext.

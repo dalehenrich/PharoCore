@@ -3,11 +3,14 @@
 openDebugger: aDebugger fullMorphicLabel: aLabelString
 	"Open a full morphic debugger with the given label"
 
-	| window aListMorph oldContextStackIndex |
+	| window aListMorph oldContextStackIndex label |
 	oldContextStackIndex := aDebugger contextStackIndex.
 	aDebugger expandStack. "Sets contextStackIndex to zero."
-
-	window := (SystemWindow labelled: aLabelString) model: aDebugger.
+	
+	label := aDebugger isPostMortem 
+					ifTrue: [ 'PostMortem: ', aLabelString ]
+					ifFalse: [ aLabelString ] .
+	window := (SystemWindow labelled: label) model: aDebugger.
 	aListMorph := self buildListOfElementsFor: aDebugger.
 	aListMorph menuTitleSelector: #messageListSelectorTitle.
 	window 

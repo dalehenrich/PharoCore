@@ -13,14 +13,12 @@ send: startUpOrShutDown toClassesNamedIn: startUpOrShutDownList with: argument
 			| class |
 			class := self at: name ifAbsent: [ nil ].
 			class isNil
-				ifTrue: [ removals add: name]
+				ifTrue: [ removals add: name ]
 				ifFalse: [ 
-					[class perform: startUpOrShutDown with: argument]
-						on: Error do: [ :err|
-							Smalltalk 
-								logError: '==== Startup Error: ', err description 
-								inContext: err signalerContext.
-							errors add: err ]]].
+					self 
+						logStartUpErrorDuring: [ class perform: startUpOrShutDown with: argument ] 
+						into: errors 
+						tryDebugger: false]].
 			
 	"Remove any obsolete entries, but after the iteration"
 	startUpOrShutDownList removeAll: removals.

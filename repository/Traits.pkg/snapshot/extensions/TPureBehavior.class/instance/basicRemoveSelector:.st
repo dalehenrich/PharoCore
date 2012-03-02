@@ -8,6 +8,5 @@ basicRemoveSelector: selector
 	oldMethod := self methodDict at: selector ifAbsent: [^ self].
 	self methodDict removeKey: selector.
 
-	"Now flush Squeak's method cache, either by selector or by method"
-	oldMethod flushCache.
-	selector flushCache! !
+	"Now flush the method cache"
+	oldMethod flushCache.! !

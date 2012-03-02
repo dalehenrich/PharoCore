@@ -1,6 +1,8 @@
 
-!CommandLineUIManager methodsFor: 'as yet unclassified'!
+!CommandLineUIManager methodsFor: 'accessing'!
 stderr
 	
-	 FileStream stderr converter installLineEndConvention: String crlf.
+	"install the line end conversion and initialize the converter"
+	 FileStream stderr wantsLineEndConversion: true; converter.
+	
 	^ FileStream stderr! !

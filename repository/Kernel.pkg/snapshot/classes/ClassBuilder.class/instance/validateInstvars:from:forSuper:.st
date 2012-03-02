@@ -5,18 +5,20 @@ validateInstvars: instVarArray from: oldClass forSuper: newSuper
 	| instVars usedNames temp |
 	instVarArray isEmpty ifTrue:[^true]. "Okay"
 	newSuper allowsSubInstVars ifFalse: [
-		self error: newSuper printString, ' does not allow subclass inst vars. See allowsSubInstVars.'. ^ false].
+		self error: newSuper printString, ' does not allow subclass inst vars. See allowsSubInstVars.'. ].
 
 	"Validate the inst var names"
 	usedNames := instVarArray asSet.
 	usedNames size = instVarArray size 
 		ifFalse:[	instVarArray do:[:var|
 					usedNames remove: var ifAbsent:[temp := var]].
-				self error: temp,' is multiply defined'. ^false].
+				self error: temp,' is multiply defined'. ].
 	(usedNames includesAnyOf: self reservedNames) 
 		ifTrue:[	self reservedNames do:[:var|
 					(usedNames includes: var) ifTrue:[temp := var]].
-				self error: temp,' is a reserved name'. ^false].
+				self error: temp,' is a reserved name'. ].
+	usedNames do: [ :name |
+		name isLegalInstVarName ifFalse: [ self error: name, ' is not a legal inst var name'. ] ].
 
 	newSuper == nil ifFalse:[
 		usedNames := newSuper allInstVarNames asSet.

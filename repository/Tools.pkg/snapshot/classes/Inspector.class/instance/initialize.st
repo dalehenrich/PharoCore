@@ -2,5 +2,5 @@
 !Inspector methodsFor: 'initialization'!
 initialize
 	
-	selectionIndex := 0.
+	selectionIndex := 1.
 	super initialize! !

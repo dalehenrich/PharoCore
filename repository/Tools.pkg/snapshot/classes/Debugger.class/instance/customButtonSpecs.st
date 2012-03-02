@@ -4,6 +4,8 @@ customButtonSpecs
 	"Answer an array of elements of the form wording, selector, help-message, that characterize the custom button row of a debugger."
 
 	| list |
+	self isPostMortem ifTrue: [ ^ self postMortemCustomeButtonSpecs ].
+	
 	list := #(('Proceed'	proceed				'Close the debugger and proceed.')
 		('Restart'		restart				'Reset this context to its start.')
 		('Into'			send				'Step Into message sends')
@@ -12,6 +14,7 @@ customButtonSpecs
 		('Full Stack'		fullStack			'Show full stack')
 		('Run to Here'	runToSelection		'Run to selection')
 		('Where'		where				'Select current pc range')).
+								
 	self class restartAlsoProceeds ifTrue:
 		[list := list collect: [:each |
 			each second == #restart

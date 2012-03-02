@@ -16,16 +16,6 @@ doPrimitive: primitiveIndex method: meth receiver: receiver args: arguments
    				                 label:'Code simulation error'
       			                 contents: nil].
 
-       "ContextPart>>blockCopy:; simulated to get startpc right"
-       (primitiveIndex = 80 and: [receiver isKindOf: ContextPart])
-               ifTrue: [^self push: ((BlockContext newForMethod: receiver method)
-                                               home: receiver home
-                                               startpc: pc + 2
-                                               nargs: (arguments at: 1))].
-       (primitiveIndex = 81 and: [receiver isMemberOf: BlockContext]) "BlockContext>>value[:value:...]"
-               ifTrue: [^receiver pushArgs: arguments from: self].
-       (primitiveIndex = 82 and: [receiver isMemberOf: BlockContext]) "BlockContext>>valueWithArguments:"
-               ifTrue: [^receiver pushArgs: arguments first from: self].
        primitiveIndex = 83 "afr 9/11/1998 19:50" "Object>>perform:[with:...]"
                ifTrue: [^self send: arguments first to: receiver
                                        with: arguments allButFirst

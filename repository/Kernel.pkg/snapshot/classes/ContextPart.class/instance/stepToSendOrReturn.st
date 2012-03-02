@@ -5,7 +5,7 @@ stepToSendOrReturn
 	returning a value to the receiver (that is, until switching contexts)."
 
 	| ctxt |
-	[self willReallySend | self willReturn | self willStore]
+	[self willSend | self willReturn | self willStore]
 		whileFalse: [
 			ctxt := self step.
 			ctxt == self ifFalse: [self halt. 

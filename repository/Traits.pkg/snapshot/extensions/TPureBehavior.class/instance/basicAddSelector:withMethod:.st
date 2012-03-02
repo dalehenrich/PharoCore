@@ -11,6 +11,5 @@ basicAddSelector: selector withMethod: compiledMethod
 	compiledMethod methodClass: self.
 	compiledMethod selector: selector.
 
-	"Now flush Squeak's method cache, either by selector or by method"
-	oldMethodOrNil ifNotNil: [oldMethodOrNil flushCache].
-	selector flushCache.! !
+	"Now flush the method cache, when we add a method"
+	oldMethodOrNil ifNotNil: [oldMethodOrNil flushCache].! !

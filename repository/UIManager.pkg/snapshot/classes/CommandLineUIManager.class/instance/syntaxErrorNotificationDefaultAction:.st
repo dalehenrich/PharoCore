@@ -40,4 +40,4 @@ syntaxErrorNotificationDefaultAction: aSyntaxErrorNotification
 				s nextPutAll:( '_^_' padded: #left to: position - start + maxLineNumberSize + 4 with: $ ); cr]]].
 			
 	"in noninteractive mode simply quit"
-	^ self quit! !
+	^ self exitFailure! !

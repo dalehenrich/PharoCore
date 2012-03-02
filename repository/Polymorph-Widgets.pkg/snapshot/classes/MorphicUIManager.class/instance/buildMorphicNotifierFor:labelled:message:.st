@@ -5,9 +5,11 @@ buildMorphicNotifierFor: aDebugger labelled: label message: messageString
 	aDebugger expandStack.
 	window := (PreDebugWindow labelled: label) model: aDebugger.
 	extentToUse := 450 @ 156. "nice and wide to show plenty of the error msg"
+	
 	window
 		addMorph: (row := aDebugger buttonRowForPreDebugWindow: window)
 		fullFrame: (LayoutFrame fractions: (0@0 corner: 1@0) offsets: (0@0 corner: 0@row minExtent y)).
+	
 	row color: Color transparent.
 	messageString notNil
 		ifFalse:

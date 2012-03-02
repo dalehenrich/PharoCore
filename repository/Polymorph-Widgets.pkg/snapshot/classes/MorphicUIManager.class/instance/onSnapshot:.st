@@ -6,7 +6,7 @@ onSnapshot: resuming
 	
 	"if we resuming, check if we're still interactive "
 	
-	(resuming) ifTrue:[
+	resuming ifTrue: [
 		Smalltalk isInteractive ifFalse: [
 			^ self nonInteractiveManager onSnapshot: resuming ].
 		Smalltalk isHeadless ifTrue: [

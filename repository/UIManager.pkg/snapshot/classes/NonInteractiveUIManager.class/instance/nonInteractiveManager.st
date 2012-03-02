@@ -5,4 +5,5 @@ nonInteractiveManager
 	  We put it here, so subclasses can override it. 
 	
 	We already non-interactive. Just answer self
-	"! !
+	"
+	^ self! !

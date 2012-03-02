@@ -1,5 +1,5 @@
 
-!CommandLineUIManager class methodsFor: 'nil'!
+!CommandLineUIManager class methodsFor: 'instance creation'!
 replacing: aUIManager
 
 	"Replace the current UI manager with instance of myself. 

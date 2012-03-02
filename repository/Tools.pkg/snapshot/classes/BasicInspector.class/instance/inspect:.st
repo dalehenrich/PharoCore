@@ -1,10 +1,9 @@
 
 !BasicInspector methodsFor: 'as yet unclassified'!
 inspect: anObject 
-	"Initialize the receiver so that it is inspecting anObject. There is no 
-	current selection."
+	"Initialize the receiver so that it is inspecting anObject."
 
 	self initialize.
 	object := anObject.
-	selectionIndex := 0.
+	selectionIndex := 1.
 	contents := ''! !

@@ -6,4 +6,4 @@ syntaxErrorNotificationDefaultAction: aSyntaxErrorNotification
 	super syntaxErrorNotificationDefaultAction: aSyntaxErrorNotification.
 	
 	"in noninteractive mode simply quit"
-	^ self quit! !
+	^ self exitFailure! !

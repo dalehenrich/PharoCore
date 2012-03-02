@@ -5,6 +5,7 @@ returnValue
 
 	| previous selectedContext expression value |
 	contextStackIndex = 0 ifTrue: [^Beeper beep].
+	self isPostMortem ifTrue: [^ self].
 	selectedContext := self selectedContext.
 	expression := UIManager default request: 'Enter expression for return value:'.
 	value := self class evaluatorClass new 

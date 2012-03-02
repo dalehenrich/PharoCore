@@ -10,11 +10,13 @@ validateClassvars: classVarArray from: oldClass forSuper: newSuper
 	usedNames size = classVarArray size 
 		ifFalse:[	classVarArray do:[:var|
 					usedNames remove: var ifAbsent:[temp := var]].
-				self error: temp,' is multiply defined'. ^false].
+				self error: temp,' is multiply defined'. ].
 	(usedNames includesAnyOf: self reservedNames) 
 		ifTrue:[	self reservedNames do:[:var|
 					(usedNames includes: var) ifTrue:[temp := var]].
-				self error: temp,' is a reserved name'. ^false].
+				self error: temp,' is a reserved name'. ].
+	usedNames do: [ :name |
+		name isLegalInstVarName ifFalse: [ self error: name, ' is not a legal inst var name'. ] ].
 
 	newSuper == nil ifFalse:[
 		usedNames := newSuper allClassVarNames asSet.

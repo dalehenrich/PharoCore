@@ -14,10 +14,10 @@ parseCaseMappingFrom: stream
 	[stream atEnd] whileFalse:[
 		| fields line srcCode dstCode |
 		line := stream nextLine copyUpTo: $#.
-		fields := line trimBoth findTokens: $;.
-		(fields size > 2 and: [#('C' 'S') includes: (fields at: 2) trimBoth]) ifTrue:[
-			srcCode := Integer readFrom: (fields at: 1) trimBoth base: 16.
-			dstCode := Integer readFrom: (fields at: 3) trimBoth base: 16.
+		fields := line withBlanksTrimmed findTokens: $;.
+		(fields size > 2 and: [#('C' 'S') includes: (fields at: 2) withBlanksTrimmed]) ifTrue:[
+			srcCode := Integer readFrom: (fields at: 1) withBlanksTrimmed base: 16.
+			dstCode := Integer readFrom: (fields at: 3) withBlanksTrimmed base: 16.
 			ToCasefold at: srcCode put: dstCode.
 		].
 	].

@@ -1,6 +1,6 @@
 
 UIManager subclass: #CommandLineUIManager
 	instanceVariableNames: 'doNotQuitOnRestart uiManager'
-	classVariableNames: ''
+	classVariableNames: 'SnapshotErrorImage'
 	poolDictionaries: ''
 	category: 'UIManager'!

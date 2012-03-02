@@ -1,7 +1,7 @@
 
 CommandLineUIManager subclass: #NonInteractiveUIManager
 	instanceVariableNames: ''
-	classVariableNames: 'SnapshotImage'
+	classVariableNames: ''
 	poolDictionaries: ''
 	category: 'UIManager'!
 

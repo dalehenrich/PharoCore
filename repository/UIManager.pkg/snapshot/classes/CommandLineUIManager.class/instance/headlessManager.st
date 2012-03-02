@@ -1,4 +1,7 @@
 
-!CommandLineUIManager methodsFor: 'as yet unclassified'!
+!CommandLineUIManager methodsFor: 'accessing'!
 headlessManager
-	^ self! !
+	self class == CommandLineUIManager 
+		ifFalse: [ ^ self ].
+		
+	^ CommandLineUIManager replacing: uiManager! !

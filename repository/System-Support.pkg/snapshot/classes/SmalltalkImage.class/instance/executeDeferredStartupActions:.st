@@ -9,12 +9,10 @@ executeDeferredStartupActions: resuming
 	
 	errors := OrderedCollection new.	
 		
-	deferredStartupActions do: [:each | 
-		[ each cull: resuming ] 
-			on: Error 
-			do: [ :err|
-				Smalltalk 
-					logError: '==== Startup Error: ', err description 
-					inContext: err signalerContext.
-				 errors add: err]].
+	deferredStartupActions do: [:each |
+		self 
+			logStartUpErrorDuring: [ each cull: resuming ] 
+			into: errors
+			tryDebugger: self isInteractive].
+		
 	^ errors! !

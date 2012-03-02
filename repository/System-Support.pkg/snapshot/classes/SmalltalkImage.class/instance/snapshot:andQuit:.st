@@ -31,14 +31,13 @@ snapshot: save andQuit: quit
 	startupErrors := OrderedCollection new.
 	
 	UIManager default boot: resuming during: [
-			startupErrors addAll: (self processStartUpList: resuming).
-			resuming
-				ifTrue: [ self recordStartupStamp ].
-		].
+		startupErrors addAll: (self processStartUpList: resuming).
+		resuming
+			ifTrue: [ self recordStartupStamp ]].
 	startupErrors addAll: (self executeDeferredStartupActions: resuming).
 	
 	startupErrors isEmpty 
-		ifFalse: [ self error: 'Got startup errors ' ].
+		ifFalse: [ self handleStartupErrors: startupErrors ].
 		
 	snapshotResult == nil
 		ifTrue: [ self error: 'Failed to write image file (disk full?)' ].

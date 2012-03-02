@@ -9,5 +9,5 @@ addPackagesAsGroup: aCollection
 			packages do: [:package | blocks add: [ package orderedClasses]].
 			name := ( packages collect: [:package | package name]) joinUsing: ' + '.
 			^ (self groupsManager	
-					addADynamicClassGroupSilentlyNamed: name
+					addADynamicClassGroupNamed: name
 					blocks: blocks)]! !
