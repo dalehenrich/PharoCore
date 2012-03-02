@@ -1,0 +1,5 @@
+
+!RecentMessageList methodsFor: 'class event handler'!
+aClassHasBeenRemoved: anEvent
+
+	self removeAClass: anEvent! !

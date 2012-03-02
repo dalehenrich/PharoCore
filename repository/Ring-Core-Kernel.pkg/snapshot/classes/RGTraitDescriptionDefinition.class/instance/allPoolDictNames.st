@@ -1,0 +1,5 @@
+
+!RGTraitDescriptionDefinition methodsFor: 'variables'!
+allPoolDictNames
+
+	^#()! !

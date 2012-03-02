@@ -1,0 +1,6 @@
+
+!DateAndTimeEpochTest methodsFor: 'testing'!
+testAsDuration
+	self assert: aDateAndTime asDuration =  0 asDuration
+	
+! !

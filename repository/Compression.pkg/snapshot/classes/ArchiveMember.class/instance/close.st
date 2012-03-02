@@ -1,0 +1,4 @@
+
+!ArchiveMember methodsFor: 'initialization'!
+close
+! !

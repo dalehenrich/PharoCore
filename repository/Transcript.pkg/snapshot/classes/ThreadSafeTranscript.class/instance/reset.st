@@ -1,0 +1,4 @@
+
+!ThreadSafeTranscript methodsFor: 'streaming'!
+reset
+	! !

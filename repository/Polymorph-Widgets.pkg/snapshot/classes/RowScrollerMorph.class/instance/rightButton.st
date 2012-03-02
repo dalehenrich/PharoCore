@@ -1,0 +1,6 @@
+
+!RowScrollerMorph methodsFor: 'accessing'!
+rightButton
+	"Answer the value of rightButton"
+
+	^ rightButton! !

@@ -1,0 +1,3 @@
+
+!ReturnNode methodsFor: 'converting'!
+asReturnNode! !

@@ -1,0 +1,4 @@
+
+!Collection methodsFor: '*Collections-arithmetic-collectors'!
+arcTan
+	^self collect: [:each | each arcTan]! !

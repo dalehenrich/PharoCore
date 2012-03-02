@@ -1,0 +1,6 @@
+
+!TimespanTest methodsFor: 'testing'!
+testUnionWithIncluded
+
+	self 
+		assert: (aTimespan union: anIncludedTimespan) = aTimespan 	! !

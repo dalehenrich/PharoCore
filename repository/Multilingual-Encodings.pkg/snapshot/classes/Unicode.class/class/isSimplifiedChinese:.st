@@ -1,0 +1,8 @@
+
+!Unicode class methodsFor: 'subencodings'!
+isSimplifiedChinese: code
+
+	^ code > 255 and: [(GB2312 charFromUnicode: code) notNil]
+
+
+! !

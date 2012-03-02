@@ -1,0 +1,12 @@
+SystemOrganization addCategory: #'CollectionsTests-Abstract'!
+SystemOrganization addCategory: #'CollectionsTests-Arrayed'!
+SystemOrganization addCategory: #'CollectionsTests-Atomic'!
+SystemOrganization addCategory: #'CollectionsTests-Sequenceable'!
+SystemOrganization addCategory: #'CollectionsTests-SplitJoin'!
+SystemOrganization addCategory: #'CollectionsTests-Stack'!
+SystemOrganization addCategory: #'CollectionsTests-Streams'!
+SystemOrganization addCategory: #'CollectionsTests-Strings'!
+SystemOrganization addCategory: #'CollectionsTests-Support'!
+SystemOrganization addCategory: #'CollectionsTests-Text'!
+SystemOrganization addCategory: #'CollectionsTests-Unordered'!
+SystemOrganization addCategory: #'CollectionsTests-Weak'!

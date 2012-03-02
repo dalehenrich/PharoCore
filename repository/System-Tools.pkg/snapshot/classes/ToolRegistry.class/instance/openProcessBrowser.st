@@ -1,0 +1,7 @@
+
+!ToolRegistry methodsFor: 'menu'!
+openProcessBrowser
+	self using: #processBrowser do: [:tool |
+		tool open
+		]
+! !

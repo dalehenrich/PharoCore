@@ -1,0 +1,7 @@
+
+!PluggableSliderMorph methodsFor: 'as yet unclassified'!
+scrollAbsolute: event
+	"Ignore if disabled."
+	
+	self enabled ifFalse: [^self].
+	^super scrollAbsolute: event! !

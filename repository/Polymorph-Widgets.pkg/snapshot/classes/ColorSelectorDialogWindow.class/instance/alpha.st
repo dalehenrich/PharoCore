@@ -1,0 +1,6 @@
+
+!ColorSelectorDialogWindow methodsFor: 'as yet unclassified'!
+alpha
+	"Answer the alpha value of the selected color."
+
+	^(self selectedColor alpha * 255) asInteger! !

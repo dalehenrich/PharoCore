@@ -1,0 +1,4 @@
+
+!MCAddition methodsFor: 'accessing'!
+fromSource
+	^ ''! !

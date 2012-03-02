@@ -1,0 +1,5 @@
+
+!ClassTrait methodsFor: '*Ring-Core-Kernel'!
+asFullRingDefinition
+
+	^ self theNonMetaClass asFullRingDefinition theMetaClass! !

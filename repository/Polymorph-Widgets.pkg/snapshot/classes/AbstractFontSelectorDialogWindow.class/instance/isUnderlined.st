@@ -1,0 +1,6 @@
+
+!AbstractFontSelectorDialogWindow methodsFor: 'accessing'!
+isUnderlined
+	"Answer the value of isUnderlined"
+
+	^ isUnderlined! !

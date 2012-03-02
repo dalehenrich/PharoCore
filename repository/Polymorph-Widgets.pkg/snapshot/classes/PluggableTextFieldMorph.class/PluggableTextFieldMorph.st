@@ -1,0 +1,9 @@
+
+PluggableTextMorph subclass: #PluggableTextFieldMorph
+	instanceVariableNames: 'converter ghostText default entryCompletion endRow'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Polymorph-Widgets'!
+
+!PluggableTextFieldMorph commentStamp: 'gvc 5/18/2007 12:39' prior: 0!
+Single-line text field editor with DialogWindow key integration (return for default, escape for cancel) and keyboard focus navigation (tab/shift-tab). Additionally supports pluggable converters to translate between an object and its string form and vice-versa.!

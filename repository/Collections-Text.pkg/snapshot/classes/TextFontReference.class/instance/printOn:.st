@@ -1,0 +1,6 @@
+
+!TextFontReference methodsFor: 'comparing'!
+printOn: aStream
+	aStream nextPutAll: 'a TextFontReference(';
+		print: font;
+		nextPut: $)! !

@@ -1,0 +1,4 @@
+
+!ProcessTest methodsFor: 'running'!
+tearDown
+	! !

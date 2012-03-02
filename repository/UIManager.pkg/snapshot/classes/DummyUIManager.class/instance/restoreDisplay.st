@@ -1,0 +1,3 @@
+
+!DummyUIManager methodsFor: 'display'!
+restoreDisplay! !

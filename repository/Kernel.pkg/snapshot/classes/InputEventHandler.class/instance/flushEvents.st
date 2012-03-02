@@ -1,0 +1,3 @@
+
+!InputEventHandler methodsFor: 'events'!
+flushEvents! !

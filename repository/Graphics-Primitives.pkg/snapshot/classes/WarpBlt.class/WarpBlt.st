@@ -1,0 +1,13 @@
+
+BitBlt subclass: #WarpBlt
+	instanceVariableNames: 'p1x p1y p1z p2x p2y p2z p3x p3y p3z p4x p4y p4z cellSize sourceRGBmap'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Graphics-Primitives'!
+
+!WarpBlt commentStamp: '<historical>' prior: 0!
+WarpBlt is a little warp-drive added on to BitBlt.  It takes a quadrilateral as its source specification, while its destination is traversed and combined just like any other call to copyBits.
+
+The source quadrilateral is specified as an array of points starting with the corner that wants to end up in the topLeft, and proceding to the successive points that want to follow CCW around the destination rectangle.  Note that in specifying a plain old rectangle source, its non topLeft points must be actual pixels, not outside by 1, as with rectangle bottmRight, eg.  See the method Rectangle asQuad.
+
+WarpBlt does a fast job of rotation, reflection and scaling, and it can even produce a semblance of perspective.  Depth parameters are included for future improvements in this direction. but the primitve does not support this yet.!

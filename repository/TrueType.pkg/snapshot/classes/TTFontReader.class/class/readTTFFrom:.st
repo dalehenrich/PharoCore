@@ -1,0 +1,5 @@
+
+!TTFontReader class methodsFor: 'instance creation'!
+readTTFFrom: aStream
+
+	^self new readTTFFrom: aStream! !

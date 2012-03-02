@@ -1,0 +1,5 @@
+
+!InvalidDirectoryError methodsFor: 'exceptiondescription'!
+defaultAction
+
+	 ^#()! !

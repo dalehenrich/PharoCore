@@ -1,0 +1,4 @@
+
+!String methodsFor: 'accessing'!
+byteAt: index
+	^self subclassResponsibility! !

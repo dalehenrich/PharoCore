@@ -1,0 +1,10 @@
+
+SequenceableCollection subclass: #SourceFileArray
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Files-System'!
+
+!SourceFileArray commentStamp: '<historical>' prior: 0!
+This class is an abstract superclass for source code access mechanisms. It defines the messages that need to be understood by those subclasses that store and retrieve source chunks on files, over the network or in databases.
+The first concrete subclass, StandardSourceFileArray, supports access to the traditional sources and changes files. Other subclasses might implement multiple source files for different applications, or access to a network source server.!

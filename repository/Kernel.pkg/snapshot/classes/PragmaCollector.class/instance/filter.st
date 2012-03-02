@@ -1,0 +1,4 @@
+
+!PragmaCollector methodsFor: 'accessing'!
+filter
+	^ filter ifNil: [filter := [:prg | true]]! !

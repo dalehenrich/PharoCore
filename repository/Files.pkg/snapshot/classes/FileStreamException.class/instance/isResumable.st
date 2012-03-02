@@ -1,0 +1,6 @@
+
+!FileStreamException methodsFor: 'exceptiondescription'!
+isResumable
+	"Determine whether an exception is resumable."
+
+	^true! !

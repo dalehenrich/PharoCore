@@ -1,0 +1,3 @@
+
+!LazyMorphTreeNodeMorph methodsFor: 'initialization'!
+initRow! !

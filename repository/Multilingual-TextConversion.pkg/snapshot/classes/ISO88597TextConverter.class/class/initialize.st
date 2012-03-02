@@ -1,0 +1,102 @@
+
+!ISO88597TextConverter class methodsFor: 'initialization'!
+initialize
+"
+	self initialize
+"
+	FromTable := Dictionary new.
+
+	FromTable at: 16r00A0 put: 16rA0.
+	FromTable at: 16r2018 put: 16rA1.
+	FromTable at: 16r2019 put: 16rA2.
+	FromTable at: 16r00A3 put: 16rA3.
+	FromTable at: 16r20AC put: 16rA4.
+	FromTable at: 16r20AF put: 16rA5.
+	FromTable at: 16r00A6 put: 16rA6.
+	FromTable at: 16r00A7 put: 16rA7.
+	FromTable at: 16r00A8 put: 16rA8.
+	FromTable at: 16r00A9 put: 16rA9.
+	FromTable at: 16r037A put: 16rAA.
+	FromTable at: 16r00AB put: 16rAB.
+	FromTable at: 16r00AC put: 16rAC.
+	FromTable at: 16r00AD put: 16rAD.
+	FromTable at: 16r2015 put: 16rAF.
+	FromTable at: 16r00B0 put: 16rB0.
+	FromTable at: 16r00B1 put: 16rB1.
+	FromTable at: 16r00B2 put: 16rB2.
+	FromTable at: 16r00B3 put: 16rB3.
+	FromTable at: 16r0384 put: 16rB4.
+	FromTable at: 16r0385 put: 16rB5.
+	FromTable at: 16r0386 put: 16rB6.
+	FromTable at: 16r00B7 put: 16rB7.
+	FromTable at: 16r0388 put: 16rB8.
+	FromTable at: 16r0389 put: 16rB9.
+	FromTable at: 16r038A put: 16rBA.
+	FromTable at: 16r00BB put: 16rBB.
+	FromTable at: 16r038C put: 16rBC.
+	FromTable at: 16r00BD put: 16rBD.
+	FromTable at: 16r038E put: 16rBE.
+	FromTable at: 16r038F put: 16rBF.
+	FromTable at: 16r0390 put: 16rC0.
+	FromTable at: 16r0391 put: 16rC1.
+	FromTable at: 16r0392 put: 16rC2.
+	FromTable at: 16r0393 put: 16rC3.
+	FromTable at: 16r0394 put: 16rC4.
+	FromTable at: 16r0395 put: 16rC5.
+	FromTable at: 16r0396 put: 16rC6.
+	FromTable at: 16r0397 put: 16rC7.
+	FromTable at: 16r0398 put: 16rC8.
+	FromTable at: 16r0399 put: 16rC9.
+	FromTable at: 16r039A put: 16rCA.
+	FromTable at: 16r039B put: 16rCB.
+	FromTable at: 16r039C put: 16rCC.
+	FromTable at: 16r039D put: 16rCD.
+	FromTable at: 16r039E put: 16rCE.
+	FromTable at: 16r039F put: 16rCF.
+	FromTable at: 16r03A0 put: 16rD0.
+	FromTable at: 16r03A1 put: 16rD1.
+	FromTable at: 16r03A3 put: 16rD3.
+	FromTable at: 16r03A4 put: 16rD4.
+	FromTable at: 16r03A5 put: 16rD5.
+	FromTable at: 16r03A6 put: 16rD6.
+	FromTable at: 16r03A7 put: 16rD7.
+	FromTable at: 16r03A8 put: 16rD8.
+	FromTable at: 16r03A9 put: 16rD9.
+	FromTable at: 16r03AA put: 16rDA.
+	FromTable at: 16r03AB put: 16rDB.
+	FromTable at: 16r03AC put: 16rDC.
+	FromTable at: 16r03AD put: 16rDD.
+	FromTable at: 16r03AE put: 16rDE.
+	FromTable at: 16r03AF put: 16rDF.
+	FromTable at: 16r03B0 put: 16rE0.
+	FromTable at: 16r03B1 put: 16rE1.
+	FromTable at: 16r03B2 put: 16rE2.
+	FromTable at: 16r03B3 put: 16rE3.
+	FromTable at: 16r03B4 put: 16rE4.
+	FromTable at: 16r03B5 put: 16rE5.
+	FromTable at: 16r03B6 put: 16rE6.
+	FromTable at: 16r03B7 put: 16rE7.
+	FromTable at: 16r03B8 put: 16rE8.
+	FromTable at: 16r03B9 put: 16rE9.
+	FromTable at: 16r03BA put: 16rEA.
+	FromTable at: 16r03BB put: 16rEB.
+	FromTable at: 16r03BC put: 16rEC.
+	FromTable at: 16r03BD put: 16rED.
+	FromTable at: 16r03BE put: 16rEE.
+	FromTable at: 16r03BF put: 16rEF.
+	FromTable at: 16r03C0 put: 16rF0.
+	FromTable at: 16r03C1 put: 16rF1.
+	FromTable at: 16r03C2 put: 16rF2.
+	FromTable at: 16r03C3 put: 16rF3.
+	FromTable at: 16r03C4 put: 16rF4.
+	FromTable at: 16r03C5 put: 16rF5.
+	FromTable at: 16r03C6 put: 16rF6.
+	FromTable at: 16r03C7 put: 16rF7.
+	FromTable at: 16r03C8 put: 16rF8.
+	FromTable at: 16r03C9 put: 16rF9.
+	FromTable at: 16r03CA put: 16rFA.
+	FromTable at: 16r03CB put: 16rFB.
+	FromTable at: 16r03CC put: 16rFC.
+	FromTable at: 16r03CD put: 16rFD.
+	FromTable at: 16r03CE put: 16rFE.
+! !

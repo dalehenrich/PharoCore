@@ -1,0 +1,9 @@
+
+Exception subclass: #TestFailure
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'SUnit-Core-Kernel'!
+
+!TestFailure commentStamp: '<historical>' prior: 0!
+The test framework distinguishes between failures and errors.  A failure is an event whose possibiity is explicitly anticipated and checked for in an assertion, whereas an error is an unanticipated problem like a division by 0 or an index out of bounds.  TestFailure is raised when the boolean parameter of an assert: ... or deny: ... call is the opposite of what the assertion claims.!

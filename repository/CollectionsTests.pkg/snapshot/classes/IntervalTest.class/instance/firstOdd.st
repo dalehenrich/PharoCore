@@ -1,0 +1,5 @@
+
+!IntervalTest methodsFor: 'requirements'!
+firstOdd
+	"Returns the first odd number of #collection"
+	^ -5! !

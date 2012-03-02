@@ -1,0 +1,9 @@
+
+Stream subclass: #PositionableStream
+	instanceVariableNames: 'collection position readLimit'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Collections-Streams'!
+
+!PositionableStream commentStamp: '<historical>' prior: 0!
+I represent an accessor for a sequence of objects (a collection) that are externally named by indices so that the point of access can be repositioned. I am abstract in that I do not implement the messages next and nextPut: which are inherited from my superclass Stream.!

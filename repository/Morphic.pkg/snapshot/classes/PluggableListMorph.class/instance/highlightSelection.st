@@ -1,0 +1,3 @@
+
+!PluggableListMorph methodsFor: 'drawing'!
+highlightSelection! !

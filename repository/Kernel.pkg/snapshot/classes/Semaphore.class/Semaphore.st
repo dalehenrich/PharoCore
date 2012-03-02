@@ -1,0 +1,9 @@
+
+LinkedList subclass: #Semaphore
+	instanceVariableNames: 'excessSignals'
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Kernel-Processes'!
+
+!Semaphore commentStamp: '<historical>' prior: 0!
+I provide synchronized communication of a single bit of information (a "signal") between Processes. A signal is sent by sending the message signal and received by sending the message wait. If no signal has been sent when a wait message is sent, the sending Process will be suspended until a signal is sent.!

@@ -1,0 +1,3 @@
+
+!ZipDirectoryMember methodsFor: 'private'!
+rewindData! !

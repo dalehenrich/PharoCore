@@ -1,0 +1,4 @@
+
+!AbstractFont methodsFor: 'accessing'!
+derivativeFonts
+	^#()! !

@@ -1,0 +1,5 @@
+
+!GoferOperationTest methodsFor: 'testing'!
+testFetch
+	gofer package: 'GoferFoo'.
+	self shouldnt: [ gofer fetch ] raise: Error! !

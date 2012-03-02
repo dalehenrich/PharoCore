@@ -1,0 +1,4 @@
+
+!SocketAddress methodsFor: 'converting'!
+asSocketAddress
+! !

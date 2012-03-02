@@ -1,0 +1,7 @@
+
+!RGNamedDefinition class methodsFor: 'class initialization'!
+named: aSymbol
+
+	^self new
+		name: aSymbol;
+		yourself! !

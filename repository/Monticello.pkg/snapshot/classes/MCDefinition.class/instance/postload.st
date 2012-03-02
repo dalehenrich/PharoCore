@@ -1,0 +1,3 @@
+
+!MCDefinition methodsFor: 'installing'!
+postload! !

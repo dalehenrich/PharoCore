@@ -1,0 +1,9 @@
+
+Object subclass: #SharedPool
+	instanceVariableNames: ''
+	classVariableNames: ''
+	poolDictionaries: ''
+	category: 'Kernel-Classes'!
+
+!SharedPool commentStamp: '<historical>' prior: 0!
+A shared pool represents a set of bindings which are accessible to all classes which import the pool in its 'pool dictionaries'. SharedPool is NOT a dictionary but rather a name space. Bindings are represented by 'class variables' - as long as we have no better way to represent them at least.!

@@ -1,0 +1,6 @@
+
+!MorphExtension methodsFor: 'accessing'!
+cornerStyle
+	"Answer the value of cornerStyle"
+
+	^cornerStyle! !

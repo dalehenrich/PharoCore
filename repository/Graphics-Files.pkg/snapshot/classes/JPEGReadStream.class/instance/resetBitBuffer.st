@@ -1,0 +1,5 @@
+
+!JPEGReadStream methodsFor: 'accessing'!
+resetBitBuffer
+	bitBuffer := 0.
+	bitsInBuffer := 0! !

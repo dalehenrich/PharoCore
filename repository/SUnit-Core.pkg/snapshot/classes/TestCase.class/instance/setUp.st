@@ -1,0 +1,3 @@
+
+!TestCase methodsFor: 'running'!
+setUp! !

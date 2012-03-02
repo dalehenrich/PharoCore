@@ -1,0 +1,5 @@
+
+!IslandVMTweaksTestCase methodsFor: 'miscellaneous'!
+returnTwelve
+	"this method is tweaked by testFlagInCompiledMethod"
+	^12! !

@@ -1,0 +1,5 @@
+
+!StringHolder methodsFor: 'initialization'!
+defaultContents
+
+	^''! !

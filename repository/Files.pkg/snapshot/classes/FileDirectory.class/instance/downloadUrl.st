@@ -1,0 +1,4 @@
+
+!FileDirectory methodsFor: 'squeaklets'!
+downloadUrl
+	^''! !

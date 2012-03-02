@@ -1,0 +1,3 @@
+
+!ReadStream methodsFor: 'accessing'!
+ascii! !

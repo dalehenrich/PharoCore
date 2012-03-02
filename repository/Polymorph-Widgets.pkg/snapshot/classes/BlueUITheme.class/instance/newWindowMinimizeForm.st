@@ -1,0 +1,6 @@
+
+!BlueUITheme methodsFor: 'forms'!
+newWindowMinimizeForm
+	"Answer a new form for a window minimize box."
+
+	^ BlueUIThemeIcons windowMinimizeForm! !

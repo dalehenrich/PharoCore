@@ -1,0 +1,6 @@
+
+!PositionableStream methodsFor: 'converting'!
+asBinaryOrTextStream
+	"Convert to a stream that can switch between bytes and characters"
+
+	^ (RWBinaryOrTextStream with: self contentsOfEntireFile) reset! !

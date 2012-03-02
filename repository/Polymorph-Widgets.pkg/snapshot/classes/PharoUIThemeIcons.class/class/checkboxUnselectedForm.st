@@ -1,0 +1,5 @@
+
+!PharoUIThemeIcons class methodsFor: 'as yet unclassified'!
+checkboxUnselectedForm
+	^ self form16x16FromContents: self checkboxUnselectedFormContents 
+! !

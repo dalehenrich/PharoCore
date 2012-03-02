@@ -1,0 +1,16 @@
+
+!PolymorphSystemSettings class methodsFor: 'sound'!
+soundSettingsOn: aBuilder
+	(aBuilder setting: #soundEnabled)
+		label: 'Sound'; 
+		target: SoundService;
+		noOrdering;
+		with: [
+			(aBuilder setting: #useThemeSounds)
+				label: 'Use theme sounds';
+				target: SoundTheme; 
+				with: [
+					(aBuilder pickOne: #soundThemeClass)
+						label: 'Sound theme' translated;
+						target: self;
+						domainValues: self soundThemeClassChoices]]! !

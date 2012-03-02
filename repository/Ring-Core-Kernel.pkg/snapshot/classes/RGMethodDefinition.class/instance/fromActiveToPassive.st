@@ -1,0 +1,14 @@
+
+!RGMethodDefinition methodsFor: 'type of methods'!
+fromActiveToPassive
+	"If the receiver was generated as an active method, it can be converted to a passive one by reading the data of the compiled method (if exists)"
+	
+	self isActive ifTrue: [
+		| compiledMethod |
+		compiledMethod := self compiledMethod.
+		compiledMethod notNil
+			ifTrue: [
+				self protocol: compiledMethod category.
+				self sourceCode: compiledMethod getSource.
+				self stamp: compiledMethod timeStamp ].
+		self asPassive ]! !

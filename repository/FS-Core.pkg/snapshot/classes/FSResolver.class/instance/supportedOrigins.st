@@ -1,0 +1,4 @@
+
+!FSResolver methodsFor: 'resolving'!
+supportedOrigins
+	^ #()! !

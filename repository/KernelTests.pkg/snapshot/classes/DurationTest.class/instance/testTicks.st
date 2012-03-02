@@ -1,0 +1,4 @@
+
+!DurationTest methodsFor: 'testing'!
+testTicks
+	self assert: aDuration ticks =  #(1 7384 5)! !

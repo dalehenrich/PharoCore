@@ -1,0 +1,5 @@
+
+!Behavior methodsFor: 'testing'!
+isBehavior
+	"Return true if the receiver is a behavior"
+	^true! !

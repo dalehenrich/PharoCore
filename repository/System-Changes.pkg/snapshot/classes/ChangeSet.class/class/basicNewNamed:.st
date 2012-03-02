@@ -1,0 +1,5 @@
+
+!ChangeSet class methodsFor: 'instance creation'!
+basicNewNamed: aName
+
+	^ (self basicNew name: aName) initialize! !

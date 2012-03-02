@@ -1,0 +1,8 @@
+
+!ZnHeaders methodsFor: 'accessing'!
+addAll: keyedCollection
+	"Note that we use #at:add:"
+	
+	keyedCollection keysAndValuesDo: [ :key :value |
+		self at: key add: value ].
+	^ keyedCollection ! !

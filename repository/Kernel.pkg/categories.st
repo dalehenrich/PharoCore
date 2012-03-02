@@ -1,0 +1,9 @@
+SystemOrganization addCategory: #'Kernel-Chronology'!
+SystemOrganization addCategory: #'Kernel-Classes'!
+SystemOrganization addCategory: #'Kernel-Exceptions'!
+SystemOrganization addCategory: #'Kernel-Methods'!
+SystemOrganization addCategory: #'Kernel-Models'!
+SystemOrganization addCategory: #'Kernel-Numbers'!
+SystemOrganization addCategory: #'Kernel-Objects'!
+SystemOrganization addCategory: #'Kernel-Pragmas'!
+SystemOrganization addCategory: #'Kernel-Processes'!

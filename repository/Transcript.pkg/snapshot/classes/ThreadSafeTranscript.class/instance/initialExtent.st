@@ -1,0 +1,5 @@
+
+!ThreadSafeTranscript methodsFor: 'ui building'!
+initialExtent
+	
+	^447@300! !

@@ -1,0 +1,6 @@
+
+!String methodsFor: '*regex-core'!
+copyWithRegex: rxString matchesTranslatedUsing: aBlock
+
+	^rxString asRegex
+		copy: self translatingMatchesUsing: aBlock! !

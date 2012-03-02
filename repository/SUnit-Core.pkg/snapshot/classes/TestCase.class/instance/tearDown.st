@@ -1,0 +1,5 @@
+
+!TestCase methodsFor: 'running'!
+tearDown
+
+	! !

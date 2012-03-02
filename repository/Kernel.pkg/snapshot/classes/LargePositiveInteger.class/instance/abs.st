@@ -1,0 +1,3 @@
+
+!LargePositiveInteger methodsFor: 'arithmetic'!
+abs! !

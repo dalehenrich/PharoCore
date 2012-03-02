@@ -1,0 +1,4 @@
+
+!BlockClosureTest methodsFor: 'tests'!
+testTrace
+	self assert: (ContextPart trace: aBlockContext) class = Rectangle.! !

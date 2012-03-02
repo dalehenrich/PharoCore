@@ -1,0 +1,3 @@
+
+!MorphTreeNodeMorph methodsFor: 'updating'!
+themeChanged! !

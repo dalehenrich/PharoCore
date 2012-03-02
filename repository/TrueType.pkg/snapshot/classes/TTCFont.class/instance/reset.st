@@ -1,0 +1,4 @@
+
+!TTCFont methodsFor: 'caching'!
+reset
+! !

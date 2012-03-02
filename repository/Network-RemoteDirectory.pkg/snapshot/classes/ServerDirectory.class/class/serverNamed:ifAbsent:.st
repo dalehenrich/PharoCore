@@ -1,0 +1,4 @@
+
+!ServerDirectory class methodsFor: 'available servers'!
+serverNamed: nameString ifAbsent: aBlock
+	^self servers at: nameString asString ifAbsent: [aBlock value]! !

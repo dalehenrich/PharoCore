@@ -1,0 +1,3 @@
+
+!Canvas methodsFor: 'initialization'!
+flush! !

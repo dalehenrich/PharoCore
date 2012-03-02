@@ -1,0 +1,5 @@
+
+!TraitBehavior methodsFor: '*Tools-Browser'!
+browse
+
+	^ self systemNavigation browseClass: self! !

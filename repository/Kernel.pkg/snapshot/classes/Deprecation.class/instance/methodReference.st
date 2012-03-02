@@ -1,0 +1,6 @@
+
+!Deprecation methodsFor: 'accessing'!
+methodReference
+	"Answer the value of methodReference"
+
+	^ methodReference! !

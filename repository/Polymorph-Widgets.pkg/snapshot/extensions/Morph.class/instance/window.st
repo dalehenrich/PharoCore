@@ -1,0 +1,6 @@
+
+!Morph methodsFor: '*Polymorph-Widgets'!
+window
+	"Answer the receiver's window."
+
+	^self ownerThatIsA: SystemWindow! !

@@ -1,0 +1,4 @@
+
+!MCMerger methodsFor: 'accessing'!
+operations
+	^ #()! !

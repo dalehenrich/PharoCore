@@ -1,0 +1,3 @@
+
+!FinderPragmaNode methodsFor: 'private'!
+browseClass! !

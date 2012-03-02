@@ -1,0 +1,7 @@
+
+!StrikeFontSet methodsFor: 'as yet unclassified'!
+reset
+	"Reset the cache of derivative emphasized fonts"
+
+	derivativeFonts := Array new: 32.
+! !

@@ -1,0 +1,3 @@
+
+!SmallInteger methodsFor: 'copying'!
+deepCopy! !

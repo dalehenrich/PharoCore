@@ -1,0 +1,3 @@
+
+!NonInteractiveTranscript methodsFor: 'streaming'!
+clear! !

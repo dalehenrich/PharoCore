@@ -1,0 +1,4 @@
+
+!BagTest methodsFor: 'tests - includes'!
+anotherElementNotIn
+	^ 42! !

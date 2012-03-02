@@ -1,0 +1,4 @@
+
+!FSPath methodsFor: 'accessing'!
+delimiter
+	^ $/! !
