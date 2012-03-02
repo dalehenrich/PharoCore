@@ -3,4 +3,5 @@
 allMethods
 	"convenient method"
 
-	^self methods! !
+	^self methods
+	"simulate a bugfix"! !
